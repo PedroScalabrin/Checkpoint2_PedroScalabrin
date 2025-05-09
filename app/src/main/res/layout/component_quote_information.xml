@@ -1,4 +1,4 @@
-<!-- res/layout/text_layout.xml -->
+<!-- res/layout/component_quote_information.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,6 +6,20 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+        
+    <TextView
+        android:id="@+id/lbl_crypto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bitcoin (BTC)"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/lbl_rate"
@@ -31,5 +45,6 @@
     <include
         layout="@layout/component_button_refresh"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

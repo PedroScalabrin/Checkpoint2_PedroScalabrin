@@ -4,6 +4,8 @@
 
 O Crypto Monitor é um aplicativo Android desenvolvido em Kotlin que permite aos usuários monitorar o preço atual do Bitcoin em tempo real. O aplicativo consome a API do Mercado Bitcoin para obter as informações mais recentes sobre o valor da criptomoeda.
 
+![1746800715613](image/README/1746800715613.png)
+
 ## Funcionalidades
 
 - Exibição do valor atual do Bitcoin em Reais (BRL)
@@ -107,7 +109,7 @@ private fun makeRestCall() {
         try {
             val service = MercadoBitcoinServiceFactory().create()
             val response = service.getTicker()
-        
+      
             // Processamento da resposta e atualização da UI
             // ...
         } catch (e: Exception) {
